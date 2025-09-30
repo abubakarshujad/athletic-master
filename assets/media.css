@@ -1,0 +1,297 @@
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 100%;
+            padding: 0 30px;
+        }
+
+        .hero-content {
+            gap: 30px;
+        }
+
+        .steps {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .hero-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero-left {
+            padding-right: 0;
+        }
+
+        .hero-cta {
+            justify-content: center;
+        }
+
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 20px;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+
+        nav .links {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 85%;
+            height: 100vh;
+            background: rgba(2, 6, 14, 0.98);
+            backdrop-filter: blur(20px);
+            flex-direction: column;
+            padding: 100px 25px 30px;
+            gap: 20px;
+            transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: 99;
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
+            border-left: 1px solid rgba(255, 255, 255, 0.05);
+            display: none;
+        }
+
+        nav .links.active {
+            right: 0;
+            display: flex;
+        }
+
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 98;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .menu-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .nav a {
+            font-size: 16px;
+            padding: 14px 0;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            color: white;
+            white-space: normal;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav a:last-child {
+            border-bottom: none;
+        }
+
+        .nav a:not(.cta):after {
+            display: none;
+        }
+
+        .nav a.cta {
+            margin-top: 15px;
+            justify-content: center;
+            font-size: 15px;
+            padding: 16px 24px;
+            min-height: 44px;
+        }
+
+        .hero-content {
+            padding: 0;
+        }
+
+        section {
+            padding: 60px 0 !important;
+        }
+
+        .qual-content {
+            flex-direction: column;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .qual-image {
+            flex: 1;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .requirements {
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .steps {
+            grid-template-columns: 1fr;
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+        }
+
+        .ft-grid {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .floating-card {
+            display: none;
+        }
+
+        .signup-cta {
+            flex-direction: column;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .stats-container {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .cta-section h2 {
+            font-size: 1.8rem;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .sub {
+            font-size: 16px;
+        }
+
+        .cta {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+
+        .how {
+            padding: 80px 0 20px 0;
+        }
+
+        #newsTitle {
+            padding-top: 0;
+        }
+
+        .brands-section {
+            padding: 80px 0;
+        }
+
+        /* Button consistency */
+        .cta,
+        .play-btn,
+        .brand-logo,
+        .stat,
+        .require {
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            padding: 0 15px;
+        }
+
+        body {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .hero-cta {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .stat-row {
+            flex-direction: column;
+        }
+
+        .requirements {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .brands {
+            justify-content: center;
+        }
+
+        .brand-logo {
+            width: 100px;
+        }
+
+        .stats-container {
+            grid-template-columns: 1fr;
+        }
+
+        .cta-section {
+            padding: 60px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 1.6rem;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .sub {
+            font-size: 14px;
+        }
+
+        .nav a {
+            font-size: 14px;
+        }
+
+        .cta {
+            font-size: 12px;
+            padding: 8px 16px;
+        }
+
+        .section-padding {
+            padding: 40px 0;
+        }
+
+        .qual-content {
+            padding: 20px;
+        }
+
+        .signup-cta {
+            padding: 20px;
+        }
+
+        .hero {
+            padding: 40px 0;
+        }
+
+        .sub,
+        .cta-section p,
+        .step p,
+        .card p {
+            line-height: 1.5;
+        }
+    }
