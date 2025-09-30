@@ -122,12 +122,13 @@
         section {
             padding: 60px 0 !important;
         }
-
+        .qual{
+            margin-top: 0px !important;
+        }
         .qual-content {
             flex-direction: column;
             text-align: center;
-            padding: 30px;
-            margin-top: 40px;
+            padding: 30px; 
         }
 
         .qual-image {
@@ -209,6 +210,10 @@
             align-items: center;
             justify-content: center;
         }
+      .qual-content .requirements .require{
+
+              flex-direction: column;
+      }
     }
 
     @media (max-width: 480px) {
