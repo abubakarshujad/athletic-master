@@ -32,9 +32,9 @@ The site promotes **SalesBets Athletes** – elite sales performers who qualify 
 - **CSS3** – Layout, styling, and responsiveness (Flexbox & Grid)  
 - **JavaScript (ES6)** – Interactivity and animations  
 
----
+--- 
 
 ## 📦 Installation & Setup
 1. Clone or download the repository  
    ```bash
-   git clone https://github.com/abubakarshujad/salesbets-landing.git
+   git clone https://github.com/abubakarshujad/athletic-master.git
